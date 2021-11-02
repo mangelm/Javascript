@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="/Curso Pildoras informaticas/css/micss4.css">
+<script>
+	var articulos=["Zapatillas","Camiseta","pantalon","calcetines"]; //metodo 1 declarar lista
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+       document.write("<p> El primer articulo es <strong>")
+
+       document.write(articulos[0] + "</strong></p>"); //Primer articulo de la lista
+
+       document.write("<p>El último elemento es <strong>");
+
+       //documnet.write(articulos[4]); /*Si pedimos un elemento que no existe nos dara undefined*/
+
+       //document.write(articulos[3]); /*Sabemos que es el ultimo elemento*/
+
+       document.write(articulos[articulos.length-1])+"</strong></p>"; 
+      
+
+      </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

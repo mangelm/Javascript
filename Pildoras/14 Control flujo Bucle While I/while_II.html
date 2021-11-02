@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/micss.css">
+<style>
+    #contenedor{
+     width:25%;
+     background-color:#FFC;
+     margin:auto;
+     padding:15px;   
+    }
+</style>
+<script>
+
+    var nombre, edad, poblacion;
+    
+    nombre=prompt("introduce tu nombre por favor");
+
+    edad=prompt("Introduce tu edad porfavor");
+
+        while(edad<=0 || edad>105){
+            
+            edad=prompt("Introduce una edad válida");
+
+        }
+    poblacion=prompt("Introduce tu poblacion porfavor");
+
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+<p>Nombre:</p>
+<script>
+document.write(nombre);
+</script>
+<p>Edad:</p>
+<script>
+document.write(edad);
+</script>
+<p>Población:</p>
+<script>
+document.write(poblacion);
+</script>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Documento sin titulo</title>
+        <style>
+
+            .micontenedor{
+
+                background-color: #00ff00;
+            }
+
+        </style>
+        <script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+        <script>
+
+            function validar(){
+
+                var n_usuario = document.getElementById("usuario").value;
+                if (n_usuario==""){
+
+                    $("#usuario").after("Rellena este campo, porfavor")
+                }
+
+            }  
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <form action="" method="get">
+
+            <input name="" type="text" id="usuario"><br/>
+
+            <input name="" type="text" id="nombre"><br/>
+
+            <input name="" type="text" id="apellido"><br/>
+       
+            <input type="button" value="Dale" onclick="validar()">
+        </form>
+    
+        
+
+    </body>
+
+</html>

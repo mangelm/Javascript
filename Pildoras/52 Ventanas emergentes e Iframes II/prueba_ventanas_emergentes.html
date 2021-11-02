@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+<script>
+
+    
+
+    $(document).ready(function(e){
+
+        var propVent="width=300, height=200, left=300, top=300, scrollbars= no, toolsbars= no"
+       
+        open("http://www.pildorasinformatias.es","Pildoras",propVent);
+        
+        $("#botonCerrar").click(function(e){
+
+            e.preventDefault(); /*Anulamos el comportamiento por defecto de un enlace*/
+
+            miVentana.close();
+        })
+    });
+</script>
+</head>
+
+<body>
+<a href="http://www.pildorasinformaticas.es">Ir a Píldoras</a>
+<br><br><br>
+<a href="" id="botonCerrar">Cerrar</a>
+</body>
+</html>

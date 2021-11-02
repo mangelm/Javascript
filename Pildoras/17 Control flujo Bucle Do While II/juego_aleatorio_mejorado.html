@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/micss.css">
+<script>
+
+var aleatorio=Math.round(Math.random()*100)
+
+var minum, intentos;
+
+minum=0;
+
+intentos=0;
+
+do{
+
+    minum=prompt("Introduce un nº entre 0 y 100")
+    
+    if(aleatorio>minum){
+        alert("Más alto");
+    }
+
+    if(aleatorio<minum){
+        alert("Más bajo");
+    };
+    intentos++; /*seria lo equivalante en python a +1 para que vaya sumando*/
+
+}while(aleatorio!=minum);
+
+alert("Correcto. Has consumido " + intentos + "intentos");
+</script>
+</head>
+
+<body>
+</body>
+</html>

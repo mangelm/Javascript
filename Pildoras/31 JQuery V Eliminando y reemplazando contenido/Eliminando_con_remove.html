@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Documento sin titulo</title>
+        <style>
+        
+            #banner{
+            background-color: #ff0000;
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            left: 400px;
+            font-size: 36px;
+            text-align: center;
+            }
+
+            img{
+                float: left;
+                margin: 15px;
+                width: 350px;
+                height: 200px;
+            }
+
+        </style>
+       
+       <script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+       <script>
+
+           $(document).ready(function(){
+
+            var z=document.getElementById("cerrar");
+
+            z.addEventListener("click",cerrar_banner,false); /*Esto es para activar un evento, si el evento hace click, llamas a la funcion*/
+
+            
+           })
+
+           function cerrar_banner(){
+
+            $("#banner").remove();
+
+           }
+       </script>
+
+
+    </head>
+
+    <body>
+
+        <div id="banner">
+        Banner de Prueba
+            <p id="cerrar">
+                Cerrar
+            </p>
+        </div>
+        <div id="carrete">
+
+            <img src="/Curso Pildoras informaticas/imgs/1.jpg" id="imagen1">
+            <img src="/Curso Pildoras informaticas/imgs/2.jpg" id="imagen2">
+            <img src="/Curso Pildoras informaticas/imgs/3.jpg" id="imagen3">
+            <img src="/Curso Pildoras informaticas/imgs/4.jpg" id="imagen4">
+
+        </div>
+
+        
+    </body>
+
+</html>

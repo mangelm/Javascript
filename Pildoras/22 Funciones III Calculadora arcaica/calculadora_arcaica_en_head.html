@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/micss.css">
+    <script>
+        var repetir="si";
+
+        
+        function suma(num1,num2){
+
+            alert("La suma es:" + (num1+num2));
+        }
+
+        function resta(num1,num2){
+
+        alert("La resta es:" + (num1-num2));
+        }
+
+        function multiplicar(num1,num2){
+
+        alert("La multiplicación es:" + (num1*num2));
+        }
+
+        function dividir(num1,num2){
+
+        alert("La división es:" + (num1/num2));
+        }
+    
+        do{
+
+            var operacion=promt("¿Que operacion deseas realizar?");
+
+            var num1=prompt("Introduce el primer numero");
+
+            var num2=prompt("Introduce el segundo numero");
+
+            if(operacion==suma){
+
+                suma(num1,num2);
+            }
+            else if(operacion==resta){
+
+                resta(num1,num2);
+            }
+            else if(operacion==multiplicar){
+
+                multiplicar(num1,num2);
+            }
+            else if(operacion==dividir){
+
+                dividir(num1,num2);
+            }
+            else{
+
+                alert("Lo siento. Operación no contemplada");
+            }
+
+            repetir = prompt("¿Desea repetir?")
+
+        }while(repetir=="si")
+        
+    </script>
+
+</head>
+
+<body>
+
+<script>
+    
+</script>
+    
+</body>
+
+</html>

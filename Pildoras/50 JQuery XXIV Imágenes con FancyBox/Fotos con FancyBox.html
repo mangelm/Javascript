@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Fotos con FancyBox</title>
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="/Curso Pildoras informaticas/Jquery/fancybox/jquery.fancybox-1.3.4.css">
+
+<script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+<script src="/Curso Pildoras informaticas/Jquery/fancybox/jquery.fancybox-1.3.4.js"></script>
+<script>
+$(document).ready(function() {
+	
+	$("#galeria a").fancybox({
+		
+		overlayColor:"#797e79",
+		overlayOpacity: .9,
+		transitionIn: "elastic",
+		transitionOut: "elastic",
+		easingIN:"easeInsine",
+		titlePosition:"Outside",
+
+		cyclic:true,
+
+		changeSoeed:1000,
+	});
+
+});
+</script>
+</head>
+<body>
+
+<div class="cabecera">
+<img src="/Curso Pildoras informaticas/imgs/pildoras_1.png">
+	<p class="logo">Píldoras Informáticas </p>
+</div>
+
+
+<div class="contenido">
+	<div class="principal">
+		<h1>Fotos</h1>
+		<div id="galeria">
+		<a href="/Curso Pildoras informaticas/imgs/paisaje1.JPG" rel="gallery" title="Bonito paisaje nocturno"><img src="/Curso Pildoras informaticas/imgs/paisaje1.JPG" width="70" height="70" alt="Paisaje nocturno"></a>
+		<a href="/Curso Pildoras informaticas/imgs/2.jpg" rel="gallery" title="Vacas pasando la vida"><img src="/Curso Pildoras informaticas/imgs/2.jpg" width="70" height="70" alt="vacas"></a>
+		<a href="/Curso Pildoras informaticas/imgs/paisaje2.JPG" rel="gallery" title="Palemeras al atradecer"><img src="/Curso Pildoras informaticas/imgs/paisaje2.JPG" width="70" height="70" alt="Palmeras"></a>
+		<a href="/Curso Pildoras informaticas/imgs/paisaje3.JPG" rel="gallery" title="Montañas"><img src="/Curso Pildoras informaticas/imgs/paisaje3.JPG" width="70" height="70" alt="Montañas"></a>
+		<a href="/Curso Pildoras informaticas/imgs/3.jpg" rel="gallery" title="Pico costero"><img src="/Curso Pildoras informaticas/imgs/3.jpg" width="70" height="70" alt="Pico"></a>
+		<a href="/Curso Pildoras informaticas/imgs/paisaje4.JPG" rel="gallery" title="Atradecer"><img src="/Curso Pildoras informaticas/imgs/paisaje4.JPG" width="70" height="70" alt="atardecer"></a></div>
+	</div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>Documento sin título</title>
+        <script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+        <script>
+
+            $(document).ready(function(){
+
+                document.getElementById("img1").addEventListener("mouseover",cambiar,false); /*mouseover cuando el raton pasa por encima de lo que sea*/
+                document.getElementById("img1").addEventListener("mouseout",restaurar,false); /*mouseout cuando quite el raton de encima del elemento*/
+            
+            });
+
+            function cambiar(){
+
+                $("img").attr("src","/Curso Pildoras informaticas/imgs/imgs2/1.jpg"); /*Cambiamos un atributo por otro*/
+            }
+            
+            function restaurar(){
+
+                $("img").attr("src","/Curso Pildoras informaticas/imgs/1.jpg"); 
+            }
+            
+        </script>
+
+    </head>
+
+    <body>
+
+        <img src="/Curso Pildoras informaticas/imgs/1.jpg" id="img1">
+    
+    </body>
+
+</html>

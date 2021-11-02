@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Documento sin titulo</title>
+        <style>
+
+            .micontenedor{
+
+                background-color: #00ff00;
+            }
+
+        </style>
+        <script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+        <script>
+                /*la .ready es para referirnos a cosas del body en el head*/
+                $(document).ready(function(){
+
+                        $("#errores h2").text("Hay errores en el formulario"); /*Substituye el texto pero no es capaz de modificar las etiquetas de html*/
+                        
+                });            
+        </script>
+
+    </head>
+
+    <body>
+
+        <div id="contenedor">
+
+            <div id="errores" class="micontenedor">
+
+                <h2>Errores</h2>
+
+            </div>
+        
+        </div>
+
+    </body>
+
+</html>

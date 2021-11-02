@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/micss.css">
+<style>
+    #contenedor{
+     width:25%;
+     background-color:#FFC;
+     margin:auto;
+     padding:15px;   
+    }
+</style>
+<script>
+
+    var nombre, edad, poblacion;
+    
+    do{ 
+        
+        nombre=prompt("Introduce un nombre válido","Escribe aqui el nombre");
+    
+    }while(!isNaN(nombre));
+ 
+    do{ 
+
+        edad=prompt("Introduce una edad válida","Escribe aqui tu edad");
+        
+    }while(edad<=0 || edad>105 ||isNaN(edad));
+    
+    do{ 
+
+        poblacion=prompt("Introduce una población válida","Escribe aqui tu población");
+
+    }while(!isNaN(poblacion));
+
+</script>
+</head>
+
+<body>
+<div id="contenedor">
+<p>Nombre:</p>
+<script>
+document.write(nombre);
+</script>
+<p>Edad:</p>
+<script>
+document.write(edad);
+</script>
+<p>Población:</p>
+<script>
+document.write(poblacion);
+</script>
+</div>
+
+</body>
+</html>

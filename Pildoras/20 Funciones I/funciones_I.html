@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/micss.css">
+    <script>
+        function dia_de_hoy(){
+            
+            /*Este comando nos da la fecha de hoy*/
+            var hoy=new Date();
+            /*Con toDateString (formato mas corto)*/
+            document.write(hoy.toDateString());
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1><strong>¿Y qué dia es hoy?</strong></h1>
+    
+    <p>
+        Hoy es dia:
+        
+        <script>
+        dia_de_hoy();
+        </script>
+    
+    </p>
+   
+    <p>
+       
+        Hemos dicho que hoy es dia:
+
+        <script>
+
+            dia_de_hoy();
+
+        </script>
+
+    </p>
+   
+    <p>
+
+        Insisto hoy es:
+
+        <script>
+
+            dia_de_hoy();
+
+        </script>
+
+    </p>
+    
+</body>
+
+</html>

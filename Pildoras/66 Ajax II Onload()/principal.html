@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Noticias varias</title>
+<link href="/Curso Pildoras informaticas/css/externa.css" rel="stylesheet">
+<style>
+#noticias li {
+	display: inline-block;
+	margin-right: 30px;
+}
+#noticias li a {
+	padding: 5px 10px; 
+	background-color: white;
+	color: black;
+	text-decoration: none;	
+}
+#noticias li a:hover {
+	background-color: rgb(255,153,0);
+	color: white;
+}
+#contenidos_externos #noticia {
+	margin-top: 10px;
+	padding: 20px;
+	border: 1px solid white;	
+}
+</style>
+<script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+<script>
+
+$(document).ready(function() {
+
+	$("#noticias a").click(function(){
+
+		var url=$(this).attr("href");
+		//Tres formas:
+		$("#contenidos_externos").load(url + " #noticia"); //El espacio en blanco es necesario
+		/*
+		$("#contenidos_externos").load("desportivas.html");//Lo que hacen los enlaces es cargar todo el contenido de esta pagina
+		$("#contenidos_externos").load("desportivas.html #noticia"); //Solo carga la parde de noticia
+		*/
+		return false; //para que funcione tiene que estar en modo local con un programa como xampp o wamp
+	}); //fin al clicar
+
+			
+}); 
+</script>
+</head>
+<body>
+
+	<div class="cabecera">
+		<p class="logo">Píldoras informáticas. Función load()</p>
+	</div>
+	<div class="contenido">
+		<div class="principal">
+			<h1>Noticias varias</h1>
+			<ul id="noticias">
+			<li><a href="generales.html">Noticias Generales</a></li>
+    <li><a href="deportivas.html">Noticias Deportivas</a></li>
+    <li><a href="tiempo.html">Noticias del Tiempo</a></li>
+			</ul>
+			<div id="contenidos_externos"></div>
+		</div>
+	</div>
+
+</body>
+</html>

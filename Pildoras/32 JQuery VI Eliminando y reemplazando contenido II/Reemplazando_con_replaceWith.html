@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Documento sin titulo</title>
+        <style>
+        
+            #banner{
+            background-color: #ff0000;
+            width: 450px;
+            height: 300px;
+            position: absolute;
+            left: 400px;
+            font-size: 36px;
+            text-align: center;
+            }
+
+            img{
+                float: left;
+                margin: 15px;
+                width: 350px;
+                height: 200px;
+            }
+            
+            #imagen1,#imagen2,#imagen3,#imagen4 {      
+                float: left;
+                margin: 15px;
+                width: 350px;
+                height: 200px;
+                font-size: 36px;
+            }
+
+        </style>
+       
+       <script src="/Curso Pildoras informaticas/Jquery/jquery-1.6.3.min.js"></script>
+       <script>
+
+           $(document).ready(function(){
+               
+            document.getElementById("cerrar").addEventListener("click",cerrar_banner,false);
+
+            var imagenes=document.querySelectorAll("#carrete img");
+
+            for(var i=0;i<4;i++){
+
+                imagenes[i].addEventListener("click",carrito,false);
+            }
+
+           })
+
+           function cerrar_banner(){
+
+            $("#banner").remove();
+
+           }
+
+           function carrito(num){
+
+            if(num.target==imagen1){ /*Quien es el origen del evento (con el target)*/
+
+                $("#imagen1").replaceWith("<div id-'imagen1'>Agregado al carro</div>");
+
+            }
+
+            if(num.target==imagen2){ /*Quien es el origen del evento (con el target)*/
+
+                $("#imagen2").replaceWith("<div id-'imagen2'>Agregado al carro</div>");
+
+            }
+
+            if(num.target==imagen3){ /*Quien es el origen del evento (con el target)*/
+
+                $("#imagen3").replaceWith("<div id-'imagen3'>Agregado al carro</div>");
+
+            }
+
+            if(num.target==imagen4){ /*Quien es el origen del evento (con el target)*/
+
+                $("#imagen4").replaceWith("<div id-'imagen4'>Agregado al carro</div>");
+
+            }
+
+           }
+       </script>
+
+
+    </head>
+
+    <body>
+
+        <div id="banner">
+        Banner de Prueba
+            <p id="cerrar">
+                Cerrar
+            </p>
+        </div>
+        <div id="carrete">
+
+            <img src="/Curso Pildoras informaticas/imgs/1.jpg" id="imagen1">
+            <img src="/Curso Pildoras informaticas/imgs/2.jpg" id="imagen2">
+            <img src="/Curso Pildoras informaticas/imgs/3.jpg" id="imagen3">
+            <img src="/Curso Pildoras informaticas/imgs/4.jpg" id="imagen4">
+
+        </div>
+
+        
+    </body>
+
+</html>

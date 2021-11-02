@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/micss.css">
+
+</head>
+
+<body>
+    <table width="25%" border="0">
+        <tr>
+            <td>
+                <label for="textfield">
+                    <input type="text" name="textfield" id="c_mensaje">
+                </label>
+            </td>
+            <td>
+                <label for="textfield2" id="c_intentos">
+                    <input type=text" name="textfield2" id="c_intentos">
+                </label>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+
+        var aleatorio=Math.round(Math.random()*100)
+        
+        var minum, intentos;
+        
+        minum=0;
+        
+        intentos=0;
+        
+        var mensaje=document.getElementById("c_mensaje");
+        var intentos_consumidos=document.getElementById("c_intentos");
+        
+        do{
+        
+            minum=prompt("Introduce un nº entre 0 y 100")
+            
+            if(aleatorio>minum){
+                mensaje.value="Más alto";
+
+                mensaje.style.fontSize="18px";
+            }
+        
+            if(aleatorio<minum){
+                mensaje.value="Más bajo";
+
+                mensaje.style.fontSize="18px";
+            }
+            intentos++; /*seria lo equivalante en python a +1 para que vaya sumando*/
+        
+            intentos_consumidos.value=intentos;
+
+            intentos_consumidos.style.fontSize="18px";
+
+            intentos_consumidos.style.color="red";
+
+            intentos_consumidos.style.textAlign="center";
+            
+        }while(aleatorio!=minum);
+        
+        mensaje.value="Correcto!";
+
+        mensaje.style.color="red";
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="/Curso Pildoras informaticas/css/micss3.css">
+<script>
+
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+         /*Dos formas de hacer arrays, listas o matrices*/
+
+         var articulos=["zapatillas","pantalón","camiseta","camisetas"];
+         var articulos2=new Array("zapatillas","pantalón","camiseta","camisetas");
+
+         /*Para acceder a los indices de una lista*/
+         alert(articulos[1]); /*Con articulos y corchetes posicion, mostramos el contenido de esa posicion*/
+		
+        /*Propiedad Lenght Muestra la cantidad de elementos dentro de la lista*/
+        articulos.length;
+      
+        /*Metodo push para agregar elementos al final de la array*/
+        articulos.push("balón");
+        articulos.push("balón","raqueta","bolsa");
+      
+        /*Metodo unshift para agregar elementos al principio de la array*/
+        articulos.unshift("balón");
+        articulos.unshift("balón","raqueta","bolsa");
+
+        /*Metodo pop elimina elemenots al final de la array*/
+        articulos.pop();
+
+        /*Metodo shift elemina elementos al principio de la array*/
+        articulos.shift();
+      
+      </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>

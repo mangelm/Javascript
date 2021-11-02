@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Documento sin titulo</title>
+        <style>
+            
+            #anuncio{
+                background-color: #000000;
+                color: #ffffff;
+                font-size: 24px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="anuncio">
+
+            ¡COMPRA!
+
+                
+        </div>
+        
+        <script>
+
+            var anuncio = document.getElementById("anuncio");
+
+            anuncio.style.width="500px";
+
+            anuncio.style.height="500px";
+
+            anuncio.innerHTML="¡Vende!"  /*Esto sirve para substituir el texto que contiene desde el principio por uno que le pongamos nosotros*/
+
+        </script>
+
+    </body>
+
+</html>

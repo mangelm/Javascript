@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Usando Arrays</title>
+<link rel="stylesheet" href="/Curso Pildoras informaticas/css/micss4.css">
+<script>
+	var articulos=["Zapatillas","Camiseta","pantalon","calcetines"]; //metodo 1 declarar lista
+	
+</script>
+</head>
+
+<body>
+<div class="contenedor">
+  <div class="header">
+    <p class="logo">JavaScript Arrays <i class="mm">Píldoras Informáticas
+     </p>
+  </div>
+  <div class="contenido">
+    <div class="principal">
+      <h1>Manejando Arrays</h1>
+      <script>
+       
+       articulos.unshift("Balón"); //Al comienzo de la lista
+       
+       document.write("<p>Casi nos olvidamos!!! Agregamos este elemento: <strong>");
+
+       document.write(articulos[0] + "</strong></p>");
+      
+       document.write("<p>Agreguemos un elemento más al final: <strong>");
+
+       articulos.push("raqueta"); //Añadimos al final de la lista 
+
+       document.write(articulos[articulos.length-1] + "</strong></p>")
+      </script>
+     </div>
+  </div>
+  
+</div>
+</body>
+</html>
