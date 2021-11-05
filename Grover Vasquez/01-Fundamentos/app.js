@@ -1,10 +1,10 @@
-/**************************
+/*************************************
  * Lección de definición de Variables
- **************************/
+ *************************************/
 
 //console.log("Hola a todo!!");
 
-var primerNombre = 'Angel'; //Variable tipo String 
+/* var primerNombre = 'Angel'; //Variable tipo String 
 console.log(primerNombre);
 
 var edad = 34;  //Tipo numerica
@@ -15,10 +15,47 @@ console.log(edad);
 var tieneTrabajo = true; //Tipo boolean
 console.log(tieneTrabajo);
 
-/* var puestoDeTrabajo; //Indefinida
+var puestoDeTrabajo; //Indefinida
 console.log(puestoDeTrabajo);
 
 tieneTrabajo = null; //Reasignando nuevo valor 
-console.log(tieneTrabajo); */
+console.log(tieneTrabajo); 
 
-var cajas;
+var cajas;*/
+
+// Conversión de tipos
+
+/* var primerNombre, edad, sexo, esSoltero;
+primerNombre = 'Angel';
+edad = 26;
+sexo = 'M';
+esSoltero = false;
+
+console.log('El nombre es: ' + primerNombre + ', y mi edad es: ' + edad + ',¿Esta soltero? ' + esSoltero);
+
+edad = 'Veinte';
+
+console.log(edad); */
+
+/*****************************************
+ * Operadores - Matemáticos (+,-,*,/)
+ ***************************************/
+
+var edadAngel, edadPablo, diferenciaEdad, sumaEdades, yearActual, yearAngel, yearPablo;
+
+edadAngel = 26;
+edadPablo = 28;
+yearActual = 2021;
+
+diferenciaEdad = edadAngel - edadPablo;
+sumaEdades = edadAngel + edadPablo;
+
+yearAngel = yearActual - edadAngel;
+yearPablo = yearActual - edadPablo;
+
+console.log(diferenciaEdad);
+console.log(sumaEdades);
+console.log("Año en que nació Angel:" + yearAngel);
+console.log("Año en que nació Pablo:" + yearPablo);
+console.log(yearActual * 5);
+console.log(yearActual / 2);
