@@ -41,7 +41,7 @@ console.log(edad); */
  * Operadores - Matemáticos (+,-,*,/)
  ***************************************/
 
-var edadAngel, edadPablo, diferenciaEdad, sumaEdades, yearActual, yearAngel, yearPablo;
+/* var edadAngel, edadPablo, diferenciaEdad, sumaEdades, yearActual, yearAngel, yearPablo;
 
 edadAngel = 26;
 edadPablo = 28;
@@ -58,4 +58,55 @@ console.log(sumaEdades);
 console.log("Año en que nació Angel:" + yearAngel);
 console.log("Año en que nació Pablo:" + yearPablo);
 console.log(yearActual * 5);
-console.log(yearActual / 2);
+console.log(yearActual / 2);  */
+
+/********************* 
+*Operadores Lógicos
+*********************/
+
+//var mayorAngel = edadPablo > edadPablo;
+/* var mayorAngel = edadPablo == edadPablo;
+console.log(mayorAngel); */
+
+/********************* 
+*Operadores typeof
+*********************/
+/* console.log(typeof edadAngel);
+console.log(typeof edadPablo);
+console.log(mayorAngel);
+console.log(typeof 'Pablo es mayor que Angel'); */
+
+/********************************************************* 
+*Operadores Unarios Aritméticos (incremento y decremento)
+**********************************************************/
+//++ Incremento
+//-- Decremento
+
+/* var edadCarmen = 18;
+var edadMaria = 14; */
+
+//++edadCarmen;
+//console.log(edadCarmen);
+
+//edadCarmen++;
+//console.log(edadCarmen);
+
+/* console.log(edadCarmen++);
+console.log(--edadCarmen); */
+
+/**************************
+*Operadores de Asignación
+***************************/
+//=
+
+var a = 5;
+var b = 18;
+
+a += b;
+a -= b;
+a *= b;
+a /= b;
+var c;
+c = a % b; //devuelve el residuo de una división.
+a %= b;
+
