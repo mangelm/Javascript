@@ -99,7 +99,7 @@ console.log(--edadCarmen); */
 ***************************/
 //=
 
-var a = 5;
+/* var a = 5;
 var b = 18;
 
 a += b;
@@ -108,5 +108,47 @@ a *= b;
 a /= b;
 var c;
 c = a % b; //devuelve el residuo de una división.
-a %= b;
+a %= b; */
+
+//Ejercicio de codificación
+//Se tiene los siguientes datos:
+
+var pesoLuis = 72;
+var alturaLuis = 1.72;
+
+var pesoCarlos = 80;
+var alturaCarlos = 1.75;
+
+/*Utilizar la siguiente formula para calcular el IMC (Indice de masa corporal) de Luis y de Carlos,
+IMC es igual al peso dividido entre la altura al cuadrado, luego comparar e indiciar si el IMC de Carlos 
+es superior al de Luis. */
+
+/***********
+ * Mi forma
+ * *********/
+/* var imcLuis = pesoLuis/(alturaLuis*alturaLuis);
+var imcCarlos = pesoCarlos/(alturaCarlos*alturaCarlos);
+
+var imcAlto = imcCarlos > imcLuis;
+
+console.log(imcCarlos);
+console.log(imcLuis);
+
+console.log(imcAlto);  */ 
+
+/******************
+ * Forma de Grover
+ ******************/
+
+/*  var imcLuis = pesoLuis/(alturaLuis*alturaLuis);
+ var imcCarlos = pesoCarlos/(alturaCarlos*alturaCarlos);
+
+ var comparacion = imcCarlos > imcLuis;
+
+ console.log(imcLuis);
+ console.log(imcCarlos);
+
+ console.log('¿El IMC de Carlos es Superior al de Luis?:' + comparacion);
+ */
+
 
