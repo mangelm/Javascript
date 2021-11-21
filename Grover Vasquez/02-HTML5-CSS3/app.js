@@ -180,40 +180,40 @@ do{
 /*Mi metodo*/
 /* 
 //Promedios
-var promedio_pablo = (14 + 8 + 16)/3;
-var promedio_maria = (12 + 18 + 10)/3;
+var promedioPablo = (14 + 8 + 16)/3;
+var promedioMaria = (12 + 18 + 10)/3;
 
-console.log('Promedio de Pablo: ' + promedio_pablo);
-console.log('Promedio de Maria: ' + promedio_maria);
+console.log('Promedio de Pablo: ' + promedioPablo);
+console.log('Promedio de Maria: ' + promedioMaria);
 
 //Promedio Superior
-if (promedio_maria > promedio_pablo){
+if (promedioMaria > promedioPablo){
     console.log('Maria tiene el promedio mas alto');
 }else{
     console.log('Carlos tiene el promedio mas alto'); 
 }
 
 //Aprobados o no
-if (promedio_maria > 13){
+if (promedioMaria > 13){
     console.log("Maria esta aprobada");
 }else{
     console.log("Maria no esta aprobada");
 }
 
-if (promedio_pablo > 13){
+if (promedioPablo > 13){
     console.log("Pablo esta aprobada");
 }else{
     console.log("Pablo no esta aprobada");
 } */
     
 /*Metodo Glover*/
-var promedio_pablo = (14 + 8 + 16)/3;
-var promedio_maria = (12 + 18 + 10)/3;
+var promedioPablo = (14 + 8 + 16)/3;
+var promedioMaria = (12 + 18 + 10)/3;
 
 //Promedio superior
-if (promedio_pablo > promedio_pablo){
+if (promedioPablo > promedioMaria){
     console.log('Pablo tiene el promedio superior');
-}else if (promedio_maria > promedio_pablo){
+}else if (promedioMaria > promedioPablo){
     console.log('Maria tiene el promedio superior');
 }else{
     console.log('Pablo y Maria tiene promedios iguales');
@@ -222,13 +222,15 @@ if (promedio_pablo > promedio_pablo){
 //Mostrar si estan aprobados
 for (var i=1; i<= 2; i++){
     if(i === 1){
-        if(promedio_pablo > 13){
+        console.log('Promedio de pablo:' + promedioPablo);
+        if(promedioPablo > 13){
             console.log('Pablo esta aprobado');
         }else{
             console.log('Pablo no esta aprobado');
         } 
     }else{
-        if (promedio_maria > 13){
+        console.log('Promedio de maria:' + promedioMaria);
+        if (promedioMaria > 13){
             console.log('Maria esta aprobada');
         }else{
             console.log('Maria no esta aprobada');
