@@ -140,16 +140,16 @@ do{
 //Valores falsos: undefined, null, 0, ''
 //Valores verdaderos = NOT valores falses
 
-var edad;
+//var edad;
 //edad = 0;
 //edad = 10;
 //edad = '';
 
-if(edad){
+/* if(edad){
     console.log('Variable esta definida');
 }else{
     console.log('Variable no definida');
-}
+} */
 
 //operadores de igualdad
 /* if(edad == 10){
@@ -162,3 +162,76 @@ if(edad){
 }else{
     console.log('Variable sin coersión')
 } */
+
+/***************************
+ * Ejercicio de setencias
+ ***************************/
+ 
+/****************
+ * Tienes dos alumnos, Pablo y Maria.
+ * Pablo tiene las siguientes notas en el curso de JavaScript: 14, 8, 16.
+ * Mária tiene las siguientes notas en el curso de mismo curso: 12,18,10.
+ * 
+ * Calcular el promedio de cada alumno, además indicar quién tiene el promedio
+ * superior, e indicar si el alumno esta aprobado, para ello su promedio
+ * debe ser superior a 13.
+ */
+
+/*Mi metodo*/
+/* 
+//Promedios
+var promedio_pablo = (14 + 8 + 16)/3;
+var promedio_maria = (12 + 18 + 10)/3;
+
+console.log('Promedio de Pablo: ' + promedio_pablo);
+console.log('Promedio de Maria: ' + promedio_maria);
+
+//Promedio Superior
+if (promedio_maria > promedio_pablo){
+    console.log('Maria tiene el promedio mas alto');
+}else{
+    console.log('Carlos tiene el promedio mas alto'); 
+}
+
+//Aprobados o no
+if (promedio_maria > 13){
+    console.log("Maria esta aprobada");
+}else{
+    console.log("Maria no esta aprobada");
+}
+
+if (promedio_pablo > 13){
+    console.log("Pablo esta aprobada");
+}else{
+    console.log("Pablo no esta aprobada");
+} */
+    
+/*Metodo Glover*/
+var promedio_pablo = (14 + 8 + 16)/3;
+var promedio_maria = (12 + 18 + 10)/3;
+
+//Promedio superior
+if (promedio_pablo > promedio_pablo){
+    console.log('Pablo tiene el promedio superior');
+}else if (promedio_maria > promedio_pablo){
+    console.log('Maria tiene el promedio superior');
+}else{
+    console.log('Pablo y Maria tiene promedios iguales');
+}
+
+//Mostrar si estan aprobados
+for (var i=1; i<= 2; i++){
+    if(i === 1){
+        if(promedio_pablo > 13){
+            console.log('Pablo esta aprobado');
+        }else{
+            console.log('Pablo no esta aprobado');
+        } 
+    }else{
+        if (promedio_maria > 13){
+            console.log('Maria esta aprobada');
+        }else{
+            console.log('Maria no esta aprobada');
+        }
+    }
+}
