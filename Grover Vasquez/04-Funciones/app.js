@@ -104,7 +104,7 @@ calcularTiempoJubilacion(1978,'Jose'); */
 // console.log(prueba());
 // console.log(prueba('Pablo'));
 
-//Argumentos no definidos
+//Argumentos Undefined
 /* var nombre;
 var prueba = function(n){
     return 'Hola ' + n;
@@ -119,4 +119,91 @@ var prueba = function(n){
 
 nombre = 'Pablo';
 console.log(prueba(nombre)); */
+
+
+//Argumentos nulos
+
+/* var a;
+a = null;
+var valorNulo = function(a){
+   return a; 
+}
+
+console.log(valorNulo(a)); */
+
+//Argumentos por default
+
+/* var sumar = function(a = a, b = 3, c= 3){
+    return a + b + c;
+}
+
+console.log(sumar(10,4,7));
+console.log(sumar(10,4));
+console.log(sumar(10, null, 4)); */
+
+//Plantillas de cadenas (template string)
+/* var nombre = 'Pablo';
+console.log('El nombre es:' + nombre);
+console.log(`El nombre es: ${nombre}`);
+
+var a = 5;
+var b = 10;
+console.log('La suma es: ' + (a + b));
+console.log(`La suma es: ${(a+b)}`); */
+
+/***************
+ * Ejercicio 4
+ * Implentar una función que nos permita evaluar el
+ * porcentaje de respuestas positivas y negativas en un examen
+ * La función debe recibir el nombre, y la cantidad de
+ * respuestas positivas y negativa
+ * 
+ * La función debe calcular el porcentaje que representa cada
+ * tipo de repuesta, en una base de 100 preguntas.
+ * 
+ * De las respuestas positivas se define el score de la persona en:
+ * A(>90), B(70% -89%), C(45%-69%), D(45%)
+ * */
+
+//Mi solución
+// function porcentajePositivas(nombre,positivas,negativas){
+    
+//    //Porcentajes negativas y positivas
+//    var porcentajetotalPositivas = (positivas/100)*100;
+//    var porcentajetotalNegativas = (negativas/100)*100;
+
+//    //Evaluar con los diferentes casos y dar resultado
+//    if(porcentajetotalPositivas>=90){
+//        console.log(`El resultado de ${nombre} es una A con un total de ${porcentajetotalPositivas}% respuestas positivas y ${porcentajetotalNegativas}% negativas`);
+//    }else if(porcentajetotalPositivas<=89 && porcentajetotalPositivas>=70){
+//        console.log(`El resultado de ${nombre} es una B con un total de ${porcentajetotalPositivas}% respuestas positivas y ${porcentajetotalNegativas}% negativas`);
+//    }else if(porcentajetotalPositivas<=69 && porcentajetotalPositivas>45){
+//        console.log(`El resultado de ${nombre} es una C con un total de ${porcentajetotalPositivas}% respuestas positivas y ${porcentajetotalNegativas}% negativas`);
+//    }else if(porcentajetotalPositivas<=45){
+//        console.log(`El resultado de ${nombre} es una D con un total de ${porcentajetotalPositivas}% respuestas positivas y ${porcentajetotalNegativas}% negativas`);
+//    }
+
+// } 
+
+//Solucion Grover
+
+var calcularScore = function(nombre, pos, neg){
+    var porPos = (pos / 100) * 100;
+    var porNeg = (neg / 100) * 100;
+    var score = '';
+
+    if(porPos > 90){
+        score = 'A';
+    }else if(porPos >= 70){
+        score = 'B';
+    }else if (porPos >=45){
+        score = 'C';
+    }else{
+        score = 'D';
+    }
+    return `${nombre} tiene el score ${score}, Positivas:${porPos}%, Negativas ${porNeg}`;
+}
+
+var resultado = calcularScore('Pablo', 75, 25);
+console.log(resultado);
 
