@@ -161,9 +161,77 @@ contendor.insertBefore(nuevoDiv,h1); //Insertar antes de */
     console.log('Click 2');
 }); */
 
-document.getElementById('boton').addEventListener('click',hacerClick);
+/* document.getElementById('boton').addEventListener('click',hacerClick);
 
 function hacerClick(){
     //console.log('Usted hizo click');
     document.getElementById('header-title').textContent = 'Texto cambiado';
+} */
+
+/*********************************************************
+ Agregar y eliminar elementos a una lista y evento submit 
+**********************************************************/
+
+var form = document.getElementById("formAgregar");
+var lista = document.getElementById("items");
+var filtro = document.getElementById('filtro');
+
+//Evento submit del formulario
+form.addEventListener('submit',agregarItem);
+
+//Evento Click de la lista
+lista.addEventListener('click',eliminarItem);
+
+//Evento del teclado en el campo de filtro
+filtro.addEventListener('keyup',filtrarItems);
+
+
+function agregarItem(e){
+    e.preventDefault(); //Cancela el evento si es cancelable sin detener todo el evento
+    //Pillo el objeto que quiero agregar del submit
+    var newItem = document.getElementById("item").value;
+
+    //Agregando elemento
+    var li = document.createElement('li');
+    li.className = "list-group-item";
+    li.appendChild(document.createTextNode(newItem));
+
+    //Boton de eliminar
+    var botonDel = document.createElement('button');
+    botonDel.className = "btn btn-danger btn-sm float-right eliminar";
+    botonDel.appendChild(document.createTextNode('X'));
+    
+    //Agregamos el boton al li
+    li.appendChild(botonDel);
+    //Agregamos este li al grupo de lis
+    lista.appendChild(li);
 }
+
+/******************************************************
+        Funcion para eliminar un Item de la lista
+********************************************************/
+function eliminarItem(e){
+    if(e.target.classList.contains('eliminar')){
+        if(confirm('¿Seguro que desea eliminar el elemento?')){
+            var li = e.target.parentElement;
+            lista.removeChild(li);
+        }
+    }
+}
+/******************************************************
+        Funcion que busque elemento en una lista
+********************************************************/
+function filtrarItems(e){
+    var texto = e.target.value.toLowerCase();
+    var items = lista.getElementsByTagName('li');
+    Array.from(items).forEach(function(item){
+        var itemNombre = item.firstChild.textContent;
+        if(itemNombre.toLowerCase().indexOf(texto) !=-1){
+            item.style.display = 'block';
+        }else{
+            item.style.display = 'none';
+        }     
+    });
+}
+
+
