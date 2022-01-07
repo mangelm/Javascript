@@ -29,7 +29,11 @@
 /******************************************************
                  MI VERSION
 ********************************************************/
+/* let persona = {
+    nombre: 'Angel',
+    edad: 26,
+    ciudad: 'Sevilla'
+} */
 
-/******************************************************
-                VERSION GROVER
-********************************************************/
+// Persona.edad = 15;
+// console.log('${persona.nombre} tiene ${persona.edad} edad y vive en la ciudad de ${persona.ciudad}');
