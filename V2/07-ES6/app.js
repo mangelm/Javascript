@@ -197,20 +197,42 @@ console.log(menores30); */
                 MAPAS ES6
 ********************************************************/
 
-const datos = new Map();
+// const datos = new Map();
 
-datos.set('nombre','Angel');
-datos.set('edad',26);
-datos.set(1,'grover@gmail.com');
-datos.set(2,'grover@gmail.com');
-datos.set('movil',999999999);
+// datos.set('nombre','Angel');
+// datos.set('edad',26);
+// datos.set(1,'grover@gmail.com');
+// datos.set(2,'grover@gmail.com');
+// datos.set('movil',999999999);
 
-console.log(datos.get('nombre'));
-console.log(datos.get(2));
-console.log(datos.size);
+// console.log(datos.get('nombre'));
+// console.log(datos.get(2));
+// console.log(datos.size);
 
-//datos.delete(2);
-//datos.clear();
-datos.forEach((value,key) => {
-    console.log(`${key} : ${value}`);
-})
+// //datos.delete(2);
+// //datos.clear();
+// datos.forEach((value,key) => {
+//     console.log(`${key} : ${value}`);
+// })
+
+/******************************************************
+        OPERADOR DE PROPAGACION = SPREAD OPERATOR
+********************************************************/
+var suma = function(a,b,c,d){
+    return a + b + c + d;
+}
+
+var oper1 = suma(10,20,30,40);
+console.log(oper1);
+
+var valores = [10,20,30,40]
+const oper2 = suma(...valores);
+
+console.log(oper2);
+
+const rrhh = ['Pedro','Pablo','Ana'];
+const contabilidad = ['Felipe','Carlos','Maria'];
+
+const empresa = [...rrhh, ...contabilidad];
+
+console.log(empresa);
