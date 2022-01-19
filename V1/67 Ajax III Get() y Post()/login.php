@@ -13,5 +13,4 @@ if ($el_usuario==$usu_entrar && $la_contra==$contra_entrar) {
 }
 
 
-
 ?>
